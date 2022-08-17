@@ -13,4 +13,8 @@ public class UnauthorizedBuyerException extends CustomException {
     public UnauthorizedBuyerException(long buyerId, long purchaseId) {
         super("Id " + buyerId + " is not authorized.", "Id " + buyerId + " is not authorized to perform actions in purchaseorder " + purchaseId + ".", HttpStatus.UNAUTHORIZED, LocalDateTime.now());
     }
+
+    public UnauthorizedBuyerException() {
+        super("unauthorized", "You can't change another user info", HttpStatus.UNAUTHORIZED, LocalDateTime.now());
+    }
 }
