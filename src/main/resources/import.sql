@@ -54,9 +54,9 @@ insert into product values (null, 'Amorango', 'FRESH', 'Morango', 4);
 insert into product values (null, 'Plump', 'FRESH', 'Banana', 5);
 insert into product values (null, 'Qualitá', 'FRESH', 'Beterraba', 2);
 
-insert into buyer values (null, 'carol');
-insert into buyer values (null, 'flavia');
-insert into buyer values (null, 'carlos');
-insert into buyer values (null, 'roberto');
-insert into buyer values (null, 'jessica');
-insert into buyer values (null, 'emerson');
+insert into buyer values (null, '1233', 'carol');
+insert into buyer values (null, '1234', 'flavia');
+insert into buyer values (null, '1235', 'carlos');
+insert into buyer values (null, '1236', 'roberto');
+insert into buyer values (null, '1237', 'jessica');
+insert into buyer values (null, '1238', 'emerson');

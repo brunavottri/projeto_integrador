@@ -8,6 +8,7 @@ import com.mercadolibre.bootcamp.projeto_integrador.service.PurchaseOrderService
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,6 +22,7 @@ public class PurchaseOrderController {
 
     @Autowired
     private PurchaseOrderService service;
+
 
     @PostMapping("/fresh-products/orders")
     public ResponseEntity<PurchaseOrderResponseDto> createPurchaseOrder(@RequestHeader("Buyer-Id") long buyerId,
